@@ -8,7 +8,7 @@ import { Particles } from "@/components/ui/shadcn-io/particles";
 import { FloatingDockDemo } from "@/components/ui/ducks";
 import Resume from "../components/resume";
 import TechnologiesShowcase from "@/components/TechnologiesShowcase";
-import ContactPage from "./contact";
+ 
 
 export default function Home() {
   return (
@@ -101,6 +101,7 @@ export default function Home() {
       
     </div>
     <FloatingDockDemo />
+
     </div>
   );
 }
