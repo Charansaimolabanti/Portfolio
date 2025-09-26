@@ -1,10 +1,10 @@
 'use client'
 
 import { BubbleBackground } from "@/components/ui/shadcn-io/bubble-background";
-import { BackgroundBeamsWithCollision } from "@/components/ui/shadcn-io/background-beams-with-collision";
+ 
 import { SparklesCore } from "@/components/ui/shadcn-io/sparkles";
 import { BackgroundCircles } from "@/components/ui/shadcn-io/background-circles";
-import ClickSpark from "@/components/ClickSpark";
+ 
 import TrueFocus from "@/components/TrueFocus";
 import { GithubIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";

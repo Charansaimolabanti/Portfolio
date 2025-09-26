@@ -97,7 +97,7 @@ export default function Home() {
         <Resume />
       </div>
       <TechnologiesShowcase />
-      {/* <ContactPage /> */}
+       
       
     </div>
     <FloatingDockDemo />

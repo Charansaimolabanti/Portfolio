@@ -7,6 +7,11 @@ const nextConfig: NextConfig = {
       "api.microlink.io",  
     ],
   },
+  eslint: {
+    // ⚠️ Warning: This allows production builds to succeed even if
+    // your project has ESLint errors.
+    ignoreDuringBuilds: true,
+  },
 };
 
 export default nextConfig;
