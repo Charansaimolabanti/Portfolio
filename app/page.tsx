@@ -1,103 +1,106 @@
+import Hero from "./pagecopy";
+import { TimelineDemo } from "./timeline2";
+import { ScratchToReveal } from "@/components/ui/scratch-to-reveal";
 import Image from "next/image";
+import ClickSpark from "@/components/ClickSpark";
+import { BackgroundBeamsWithCollision } from "@/components/ui/shadcn-io/background-beams-with-collision";
+import { Particles } from "@/components/ui/shadcn-io/particles";
+import { FloatingDockDemo } from "@/components/ui/ducks";
+import Resume from "../components/resume";
+import TechnologiesShowcase from "@/components/TechnologiesShowcase";
+import ContactPage from "./contact";
 
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <div>
+    <div>
+      <div className="relative w-full overflow-clip">
+        <ClickSpark
+          sparkColor="#fff"
+          sparkSize={10}
+          sparkRadius={15}
+          sparkCount={8}
+          duration={400}
+        >
+          <Hero />
+          <BackgroundBeamsWithCollision>
+            <div className="flex flex-col md:flex-row items-center justify-center p-6 sm:p-12 md:p-20 gap-8 md:gap-16">
+              {/* Scratch Card Section */}
+              <div className="flex flex-col items-center md:items-start">
+                <h1 className="text-amber-100 text-lg sm:text-xl md:text-2xl font-semibold mb-4">
+                  Scratch To Reveal
+                </h1>
+                <ScratchToReveal
+                  width={250}
+                  height={250}
+                  minScratchPercentage={70}
+                  className="flex items-center justify-center overflow-hidden rounded-2xl"
+                  gradientColors={["#4f34d9", "#6737ad", "#1b1b87"]}
+                >
+                  <Image
+                    src="/dev.png"
+                    alt="Developer"
+                    width={250}
+                    height={250}
+                    className="rounded-xl object-cover"
+                  />
+                </ScratchToReveal>
+              </div>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+              {/* Text Section */}
+              <div className="flex items-center justify-center md:justify-start text-center md:text-left">
+                <div>
+                  <div>
+                    <h1
+                      className="text-red-700 text-2xl"
+                      style={{ fontFamily: "StormGust, sans-serif" }}
+                    >
+                      CHARAN SAI MOLABANTI
+                    </h1>
+                  </div>
+                  <br />
+                  <div className="text-amber-100">
+                    <p>
+                      I am a passionate B.Tech student with a strong interest in
+                      building innovative and user-friendly web applications.
+                    </p>
+                    <p>
+                      With hands-on experience in{" "}
+                      <span className="text-indigo-600">
+                        HTML, CSS, JavaScript, React, Next.js, and backend
+                        technologies.
+                      </span>
+                    </p>
+                    <p>
+                      I enjoy transforming ideas into functional digital
+                      solutions.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </BackgroundBeamsWithCollision>
+          <TimelineDemo />
+        </ClickSpark>
+
+        <Particles
+          className="absolute inset-0 pointer-events-none"
+          quantity={100}
+          ease={80}
+          staticity={50}
+          color="#803ae0"
+          size={2.0}
+        />
+      </div>
+
+      <div id="resume">
+        <Resume />
+      </div>
+      <TechnologiesShowcase />
+      {/* <ContactPage /> */}
+      
+    </div>
+    <FloatingDockDemo />
     </div>
   );
 }
