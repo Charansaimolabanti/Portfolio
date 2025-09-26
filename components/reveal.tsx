@@ -2,8 +2,7 @@
 import React from "react";
 import {
   TextRevealCard,
-  TextRevealCardDescription,
-  TextRevealCardTitle,
+  
 } from "../components/ui/text-reveal-card";
 
 export function TextRevealCardPreview() {
