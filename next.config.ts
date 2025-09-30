@@ -1,17 +1,18 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-        devIndicators:false,
-         images: {
-    domains: [
-      "api.microlink.io",  
+  devIndicators: false,
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "api.microlink.io",
+        port: "",
+        pathname: "/**",
+      },
     ],
   },
-  eslint: {
-    // ⚠️ Warning: This allows production builds to succeed even if
-    // your project has ESLint errors.
-    ignoreDuringBuilds: true,
-  },
+   
 };
 
 export default nextConfig;
