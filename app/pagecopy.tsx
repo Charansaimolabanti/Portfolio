@@ -23,17 +23,8 @@ export default function Hero() {
       {/* Bubble Background */}    {/* Navbar */}
  
  
-      <BubbleBackground interactive={true}>
-        
-<SparklesCore
-        background="transparent"
-        minSize={0.6}
-        maxSize={1.4}
-        particleDensity={100}
-        className="absolute inset-0 w-full h-full z-0"
-        particleColor="#9403fc"
-        speed={1}
-      />
+      
+
           <nav className=" top-0 left-0 w-full flex flex-col sm:flex-row items-center justify-between px-6 py-4 gap-4 bg-black z-50  ">
           <a href="#" className="text-white text-lg font-bold">
             <div className="text-sm font-semibold text-white">
@@ -61,8 +52,7 @@ export default function Hero() {
  
         {/* Background Circles */}
         <BackgroundCircles />
-      </BubbleBackground>
- 
+      
      </div>
   
   );
